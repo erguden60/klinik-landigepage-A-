@@ -5,8 +5,7 @@ import {
   FaFileMedicalAlt,
 } from "react-icons/fa";
 
-// Özellik verilerimizi bir array içinde tanımlayalım.
-// Bu, kodu daha temiz ve yönetilebilir yapar.
+
 const features = [
   {
     icon: <FaCalendarAlt className="h-10 w-10 text-cyan-400" />,
