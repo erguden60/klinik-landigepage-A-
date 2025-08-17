@@ -2,9 +2,9 @@ import Button from "@/components/Button";
 
 export default function HeroSection() {
   return (
-    // Ana konteyner, ekran yüksekliği kadar yer kaplayacak.
+    
     <section className="relative h-screen flex items-center justify-center">
-      {/* Arka Plan Görseli */}
+     
       <div
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{
@@ -13,10 +13,10 @@ export default function HeroSection() {
         }}
       />
 
-      {/* Okunabilirlik için Karartma Katmanı (Overlay) */}
+     
       <div className="absolute inset-0 bg-black opacity-60 z-10" />
 
-      {/* İçerik */}
+   
       <div className="relative z-20 text-center text-white px-4">
         <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight mb-4">
           Veteriner Kliniğinizin Dijital Dönüşümü
