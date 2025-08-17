@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# VetKlinik Pro Landing Page
 
-## Getting Started
+Veteriner kliniği yazılımı için geliştirilmiş modern bir landing page ve Google Gemini AI destekli akıllı sohbet botu.
 
-First, run the development server:
+**[Canlı Demo Linki](https://klinik-landigepage-a-git-main-emirhans-projects-c4f71d69.vercel.app/)** ᐊ— 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<img width="1904" height="2080" alt="klinik-landigepage-a-git-main-emirhans-projects-c4f71d69 vercel app_(iPad Pro)" src="https://github.com/user-attachments/assets/2b7adfdc-62a2-410c-b39b-e9290392519b" />
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+##  Proje Hakkında
 
-## Learn More
+Bu proje, "VetKlinik Pro" adında kurgusal bir veteriner kliniği yönetim yazılımı için oluşturulmuş, modern ve koyu temalı bir tanıtım sayfasıdır (landing page). Projenin temel amacı, Next.js 13+ (App Router) ve Tailwind CSS gibi modern web teknolojilerini kullanarak hem estetik hem de performanslı bir kullanıcı arayüzü oluşturmaktır.
 
-To learn more about Next.js, take a look at the following resources:
+Projenin en öne çıkan özelliği, kullanıcıların yazılım hakkında sorular sorabileceği, **Google Gemini API (`gemini-1.5-flash`)** tarafından desteklenen akıllı bir sohbet botunu içermesidir. API anahtarı güvenliği, Next.js Server Actions kullanılarak sağlanmıştır.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✨ Öne Çıkan Özellikler
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+-   **Modern ve Duyarlı Tasarım:** Her türlü cihazda (mobil, tablet, masaüstü) kusursuz görünen, Tailwind CSS ile oluşturulmuş şık bir arayüz.
+-   **Koyu Tema:** Kullanıcı gözünü yormayan, estetik ve modern bir koyu tema.
+-   **Etkileşimli Bölümler:** Hero, Özellikler, Nasıl Çalışır?, Hakkımızda gibi bölümlerle zenginleştirilmiş kullanıcı deneyimi.
+-   **Akıllı Sohbet Botu (Gemini AI):**
+    -   Google'ın güçlü `gemini-1.5-flash` modelini kullanır.
+    -   Kullanıcıların yazılım ve genel veterinerlik konularındaki sorularına anında yanıt verir.
+    -   Sohbet geçmişini hatırlayarak daha akıcı diyaloglar kurar.
+    -   API anahtarı, **Next.js Server Actions** sayesinde asla istemciye (tarayıcıya) ifşa edilmez, tam güvenlik sağlanır.
+-   **Performans ve SEO:** Next.js App Router ve Server Components sayesinde hızlı sayfa yüklemeleri ve arama motoru dostu bir yapı.
+-   **Modern State Yönetimi:** React Context API kullanılarak sohbet durumu (chat state) global olarak yönetilmiştir.
 
-## Deploy on Vercel
+## 🛠️ Kullanılan Teknolojiler
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+-   **Framework:** Next.js 14+ (App Router)
+-   **Dil:** TypeScript
+-   **Styling:** Tailwind CSS
+-   **UI Kütüphanesi:** React
+-   **State Management:** React Context API
+-   **İkonlar:** React Icons
+-   **Yapay Zeka (AI):** Google Gemini API (`@google/generative-ai` SDK)
+-   **Deployment:** Vercel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🚀 Kurulum ve Çalıştırma (Teknik Kullanıcılar İçin)
+
+Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin.
+
+### Gereksinimler
+
+-   Node.js (v18.17 veya üstü)
+-   npm veya yarn
+
+### Adımlar
+
+1.  **Projeyi Klonlayın:**
+    ```bash
+    git clone https://github.com/kullanici-adiniz/proje-adiniz.git
+    cd proje-adiniz
+    ```
+
+2.  **Gerekli Paketleri Yükleyin:**
+    ```bash
+    npm install
+    # VEYA
+    yarn install
+    ```
+
+3.  **Ortam Değişkenlerini Ayarlayın:**
+    Projenin ana dizininde `.env.example` dosyasını kopyalayarak `.env.local` adında yeni bir dosya oluşturun.
+    ```bash
+    cp .env.example .env.local
+    ```
+    Ardından, `.env.local` dosyasını açın ve `GEMINI_API_KEY` değişkenine kendi Google Gemini API anahtarınızı girin. API anahtarını [Google AI Studio](https://makersuite.google.com/app/apikey) adresinden ücretsiz olarak alabilirsiniz.
+
+    ```.env.local
+    GEMINI_API_KEY=AIzaSy...sizin_api_anahtarınız
+    ```
+
+4.  **Geliştirme Sunucusunu Başlatın:**
+    ```bash
+    npm run dev
+    # VEYA
+    yarn dev
+    ```
+
+5.  **Uygulamayı Görüntüleyin:**
+    Tarayıcınızda `http://localhost:3000` adresini açın.
+
+---
+
+## 部署 (Deployment)
+
+Bu proje, Next.js için optimize edilmiş olan Vercel platformuna kolayca deploy edilebilir.
+
+1.  Projenizi bir GitHub repositorisine yükleyin.
+2.  Vercel'e gidin ve GitHub hesabınızla giriş yapın.
+3.  "Import Project" diyerek projenizin repositorisini seçin.
+4.  **En Önemli Adım:** Proje ayarlarında **"Environment Variables"** (Ortam Değişkenleri) bölümüne gidin ve `.env.local` dosyanızdaki `GEMINI_API_KEY` değişkenini aynı isim ve değerle buraya ekleyin.
+5.  "Deploy" butonuna tıklayın. Vercel projeyi otomatik olarak build edip canlıya alacaktır.
