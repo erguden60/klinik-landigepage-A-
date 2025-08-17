@@ -8,8 +8,8 @@ export default function HomePage() {
     <main>
       <HeroSection />
       <FeaturesSection />
-      <HowItWorksSection /> {/* Buraya ekle */}
-      <AboutUsSection /> {/* Buraya ekle */}
+      <HowItWorksSection /> 
+      <AboutUsSection /> 
     </main>
   );
 }
