@@ -6,7 +6,7 @@ export default function AboutUsSection() {
     <section className="py-20 bg-zinc-950">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          {/* Görsel Sütunu */}
+         
           <div className="w-full h-80 md:h-full relative rounded-lg overflow-hidden">
             <Image
               src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=2669&auto=format&fit=crop"
@@ -16,7 +16,7 @@ export default function AboutUsSection() {
             />
           </div>
 
-          {/* Metin Sütunu */}
+          
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Biz Kimiz?
