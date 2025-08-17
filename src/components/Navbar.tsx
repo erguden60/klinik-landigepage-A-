@@ -11,13 +11,8 @@ export default function Navbar() {
           <span className="text-2xl font-bold text-white">VetKlinik Pro</span>
         </Link>
 
-        {/* Navigasyon Linkleri (İleride eklenebilir) */}
         <nav className="hidden md:flex items-center space-x-8">
-          {/* Örnek Linkler:
-          <Link href="#features" className="text-gray-300 hover:text-cyan-400 transition-colors">Özellikler</Link>
-          <Link href="#about" className="text-gray-300 hover:text-cyan-400 transition-colors">Hakkımızda</Link>
-          <Link href="#contact" className="text-gray-300 hover:text-cyan-400 transition-colors">İletişim</Link>
-          */}
+          
         </nav>
 
         {/* CTA Butonu */}
